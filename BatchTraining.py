@@ -4,6 +4,7 @@ from torch.utils.data import Dataset, DataLoader, random_split
 import numpy as np 
 import math
 
+# data loading
 class WineDataset(Dataset): 
     def __init__(self):
         # data loading
@@ -30,6 +31,7 @@ class WineDataset(Dataset):
 
 full_dataset = WineDataset()
 
+# splitting dataset
 train_size = int(0.8 * len(full_dataset))
 test_size = len(full_dataset) - train_size
 
@@ -59,6 +61,8 @@ num_epochs = 100
 total_samples = len(full_dataset)
 n_iterations = math.ceil(total_samples / 4)
 
+# start training
+model.trian()
 for epoch in range(num_epochs): 
     for i, (inputs, labels) in enumerate(train_loader): 
         # forward pass and loss
@@ -77,6 +81,7 @@ for epoch in range(num_epochs):
         if (i + 1) % 10 == 0: 
             print(f'epoch {epoch + 1}/{num_epochs}, step {i + 1}/{n_iterations}, loss {loss.item():.4f}')
 
+# start testing
 model.eval()
 with torch.no_grad(): 
     n_correct = 0
