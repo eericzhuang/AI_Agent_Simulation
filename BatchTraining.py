@@ -62,7 +62,7 @@ total_samples = len(full_dataset)
 n_iterations = math.ceil(total_samples / 4)
 
 # start training
-model.trian()
+model.train()
 for epoch in range(num_epochs): 
     for i, (inputs, labels) in enumerate(train_loader): 
         # forward pass and loss
@@ -94,4 +94,3 @@ with torch.no_grad():
     
     acc = n_correct / n_samples
     print(f'accuracy = {acc:.4f}')
-
