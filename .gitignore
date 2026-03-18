@@ -7,3 +7,6 @@ __pycache__/
 .venv/
 env/
 venv/
+*.tar.gz
+CIFAR10data/
+data/

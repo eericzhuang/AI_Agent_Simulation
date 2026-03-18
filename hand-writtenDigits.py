@@ -38,8 +38,8 @@ print(samples.shape, labels.shape)
 for i in range(6): 
     plt.subplot(2, 3, i + 1)
     plt.imshow(samples[i][0], cmap='gray')
-# plt.tight_layout()
-# plt.show()
+plt.tight_layout()
+plt.show()
 
 # construct model
 class NeuralNet(nn.Module): 
