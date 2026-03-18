@@ -8,5 +8,6 @@ __pycache__/
 env/
 venv/
 *.tar.gz
+.csv/
 CIFAR10data/
 data/
