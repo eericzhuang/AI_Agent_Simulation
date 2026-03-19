@@ -12,3 +12,4 @@ venv/
 CIFAR10data/
 data/
 hymenoptera_data/
+*.jpg
