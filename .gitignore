@@ -6,6 +6,7 @@ __pycache__/
 *.pth
 .venv/
 env/
+.env
 venv/
 *.tar.gz
 *.csv
