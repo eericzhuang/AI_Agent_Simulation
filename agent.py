@@ -20,4 +20,5 @@ response = client.messages.create(
     model="claude-sonnet-4-20250514", max_tokens=1024, messages=messages # input full chat history
 )
 
+# print output from the model
 print("Claude: ", response.content[0].text)
